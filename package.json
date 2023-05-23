@@ -1,0 +1,14 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "S shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.22.0"
+  }
+}

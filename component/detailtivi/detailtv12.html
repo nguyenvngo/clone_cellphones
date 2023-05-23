@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="icon" type="image/x-icon" href="/img/image.png">
+    <script src="/js/index.js" type="text/javascript" async></script>
+    <script src="/js/details.js" type="text/javascript" async></script>
+    <title> S Shop - Tivi</title>
+</head>
+
+<body>
+    <!-- this is header -->
+    <div class="container-fluid header">
+        <div class="images">
+            <img class="img1" src="/img/logo.png" alt="logo1">
+            <img class="img2" src="/img/image.png" alt="logo2">
+        </div>
+        <div class="product-list">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            <span class="my-auto">Danh mục</span>
+        </div>
+        <!-- hidden list product -->
+        <div id="hidden-product" class="overflow-hidden">
+            <div class="nav product-hidden">
+                <div class="nav-item">
+                    <a href="../listphone.html" class="nav-link title-item">
+                        <p><svg style="margin-top: -3px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg> Điện thoại</p>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../listipad.html" class="nav-link title-item">
+                        <p><svg style="margin-top: -3px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg> Ipad</p>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link title-item" href="../listlaptop.html">
+                        <p><svg style="margin-top: -3px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                            </svg> Laptop</p>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../listtivi.html" class="nav-link title-item">
+                        <p><svg style="margin-top: -3px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
+                            </svg> Tivi</p>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../listdongho.html" class="nav-link title-item">
+                        <p><svg style="margin-top: -3px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" class="bi bi-smartwatch" viewBox="0 0 16 16">
+                                <path d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5V5z" />
+                                <path
+                                    d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667zM4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3z" />
+                            </svg> Đồng hồ</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="input-group" style="max-width: 210px;">
+            <div class="input-group-prepend">
+                <i class="fas fa-search"
+                    style="width:30px;height: 35px;background-color: #FFFFFF;opacity: 0.8;margin:auto;line-height: 35px;text-align: center;border-radius: 10px 0 0 10px;"></i>
+                <input class="input1" placeholder="Bạn muốn tìm gì?" type="text">
+            </div>
+        </div>
+        <div class="hotline">
+            <a href="tel:123456789" class="telephone">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="60" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                <p class="text-number ">
+                    Gọi mua hàng<br>
+                    123.456.789
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="" class="cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="60" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+                <span class="items-cart">0</span>
+                <p class="text-cart">
+                    Giỏ<br>
+                    hàng
+                </p>
+            </a>
+        </div>
+        <div class="user">
+            <a href="../login.html" class="login">
+                <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+                <p class="text-login">
+                    Đăng nhập
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="position-absolute mt-1" style="margin-left: 30px;">
+        <a href="/index.html" class="nav-link font-weight-bold text-danger ml-lg-5 link-home" style="margin-top: -45px;">
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 15px;margin-top: -6px;" viewBox="0 0 576 512">
+                <path
+                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                    fill="#ff0000" />
+            </svg>
+            Trang chủ</a>
+            <div class="link-listphone">
+            <a href="../listtivi.html" class="nav-link text-danger">
+                <svg style="margin-top: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <span style="font-size: 14px;font-weight: 500;">Tivi</span>
+            </a>   
+        </div>
+        
+        <div style="color: #ff0000;margin-top: -32px;margin-left: 230px;" class="detail">
+            <svg style="margin-top: -2px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <span style="font-size: 14px;font-weight: 500;">Thông tin sản phẩm</span>
+        </div>
+    </div>
+
+    <!-- chi tiết sp -->
+    <div class="container-fluid pt-3" style="width: 88%; border-top: solid 1px gray;margin-top: 100px;">
+        <h5 style="font-weight: 600;"> Smart Tivi LG 4K UHD 65 inch 65UP7720PTC
+        </h5>
+    </div>
+
+    <div class="container mt-4 d-flex flex-wrap">
+        <div class="slideshow-container">
+            <div class="mySlides1">
+                <img src="/img/tivi/tv34.webp" style="min-width: 250px;width:100%;">
+            </div>
+
+            <div class="mySlides1">
+                <img src="/img/tivi/tv35.webp" style="min-width: 250px;width:100%;">
+            </div>
+
+            <div class="mySlides1">
+                <img src="/img/tivi/tv36.webp" style="min-width: 250px;width:100%;">
+            </div>
+
+            <a class="prev nav-link" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next nav-link" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <div class="color-item mx-auto" style="text-align: center;">
+            <p style="font-weight: 600;font-size: 16px;text-align: start;">Giá bán : 
+                <span style="font-weight: bold;color: #ff0000;">22.000.000 đ</span></p>
+            <!-- <button class="btn active btn-color-item">Đen<br><span style="font-size: 12px;">13.490.000
+                    đ</span></button> -->
+            <!-- <button class="btn btn-color-item">Xanh nhạt<br><span style="font-size: 12px;">13.490.000
+                    đ</span></button>
+            <button class="btn btn-color-item">Bạc<br><span style="font-size: 12px;">13.490.000
+                    đ</span></button>
+            <button class="btn btn-color-item">Xám<br><span style="font-size: 12px;">13.490.000
+                    đ</span></button> -->
+
+            <div class="mt-4 voucher">
+                <p class="py-2" style="font-weight: bold;background-color: darkgray; border-radius:10px 10px 0 0 ;">Ưu
+                    đãi thêm</p>
+                <p class="text-voucher">+ Giảm 1% cho thành viên mới</p>
+                <p class="text-voucher">
+                    + <img src="/img/logo_vib.png" alt="vib" width="30px" height="20px">
+                    Mở thẻ VIB-nhận voucher giảm giá 200.000 đ
+                </p>
+                <p class="text-voucher">
+                    + <img src="/img/kre.png" alt="kre" width="30px" height="20px">
+                    Giảm thêm 5% tôi đa 500.000 đ khi thanh toán qua Kredivo
+                </p>
+            </div>
+
+            <div class="order mt-5">
+                <button class="btn-add py-2 px-5" style="margin-right: 25px;">Add cart</button>
+                <a href="" class="order-item py-2 px-5" style="margin-left: 25px;">Mua hàng</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="mx-auto mt-5 py-3 detail-items px-3" style="width: 83%;">
+        <h3 style="text-align: center;color: red;">Thông tin sản phẩm</h3>
+        <!-- <p>- Thiết kế AirSlim tối giản, mang đến sắc thái mới cho không gian sống của bạn</p>
+        <p>- Hình ảnh đẳng cấp cùng trải nghiệm thú vị với QLED 4K và HDR10+</p> -->
+        <p>- Smart Tivi LG 4K UHD 65 Inch 65UP7720PTC nằm trong số những dòng sản phẩm cao cấp đến từ thương hiệu LG. Với sự kết hợp hoàn hảo giữa công nghệ hình ảnh và âm thanh tiên tiến, chắc chắn gia đình bạn sẽ có những giây phút giải trí tuyệt vời khi sở hữu dòng Tivi 65 inch này</p>
+        <p>- Công nghệ hình ảnh tiên tiến cho trải nghiệm thị giác chân thực<br>
+            Màn hình của TV có kích thước 65 inch và độ phân giải đạt đến 4K cho khung hình rộng rãi với hình ảnh sắc nét đến từng chi tiết. Không dừng lại ở đó, thiết bị còn đi kèm với nhiều công nghệ độc quyền của LG như Active HDR, HDR10 Pro,... giúp chất lượng hình ảnh được nâng cao</p>
+        <p>- Mới, đầy đủ phụ kiện từ nhà sản xuất</p>
+        <!-- <p>- Sách hướng dẫn, Chân đế, Adapter, Remote thông minh</p> -->
+        <p>- 1 đổi 1 sản phẩm 1 tháng, bảo hành tại nhà<br>
+            - Bảo hành chính hãng tivi 2 năm<br>
+            - Bảo hành Remote 1 năm</p><br>
+        <h5 class="text-primary text-center">Thông số kỹ thuật</h5>
+        <table>
+            
+            <tr>
+                <td>Kích thước màn hình</td>
+                <td>65 inches</td>
+            </tr>
+            <tr>
+                <td>Hệ điều hành</td>
+                <td>WebOS</td>
+            </tr>
+            <tr>
+                <td>Công nghệ hình ảnh</td>
+                <td>Active HDR
+                    Bộ xử lý Quad Core
+                    Chế độ nhà làm phim FilmMaker Mode
+                    HDR Dynamic Tone Mapping<br>
+                    HDR10 Pro
+                    HLG
+                    LG Local Contrast
+                    Nâng cấp hình ảnh Image Enhancing
+                    Nâng cấp độ phân giải 4K AI Upscaling</td>
+            </tr>
+            <tr>
+                <td>Độ phân giải màn hình</td>
+                <td>4K</td>
+            </tr>
+            
+            <tr>
+                <td>Công nghệ âm thanh</td>
+                <td>Chế độ lọc thoại Clear Voice III
+                    Âm thanh phù hợp theo nội dung AI Sound<br>
+                    Điều chỉnh âm thanh tự động AI Acoustic Tuning
+                    Đồng bộ hóa âm thanh LG Sound Sync</td>
+            </tr>
+            <tr>
+                <td>Tiện ích nổi bật</td>
+                <td>Tìm kiếm giọng nói bằng tiếng Việt, Tích hợp trợ lí ảo Google Assistant, Chiếu hình ảnh từ điện thoại lên TV</td>
+            </tr>
+            <tr>
+                <td>Thương hiệu</td>
+                <td>Hàn Quốc</td>
+            </tr>
+            
+            <!-- <tr>
+                <td>Cổng giao tiếp</td>
+                <td>3x USB Type A
+                    1x HDMI
+                    1x Đầu đọc thẻ SD</td>
+            </tr> -->
+            <!-- <tr>
+                <td>Tính năng màn hình</td>
+                <td>Dolby Atmos, 4 loa/td>
+            </tr> -->
+            <!-- <tr>
+                <td>Pin</td>
+                <td>
+                    41 Whr</td>
+            </tr> -->
+            <!-- <tr>
+                <td>Chipset</td>
+                <td>The Unisoc T618</td>
+            </tr> -->
+        </table>
+    </div>
+
+    <!-- sp tương tự -->
+    <div class="mt-5 list-product">
+        <div class="d-flex justify-content-between title-product" style="width: 95%;margin: auto;">
+            <h3>Sản Phẩm Tương Tự</h3>
+            <a href="/component/listphone.html" style="margin-top: -3px;">xem tất cả</a>
+        </div>
+    </div>
+        <div class="mx-auto mt-2 d-flex justify-content-around flex-wrap text-center list-products" >
+            
+            <div class="list-product-items">
+                <a href="/component/detailtivi/detailtv1.html" class="list-product-items-link">
+                    <img src="/img/tivi/tv1.webp" alt="ip" width="150" height="150">
+                    <h5 class="mt-2 title-product-item">
+                        Smart Tivi Samsung QLED<br> 75 inch 75Q60BAK
+                    </h5>
+                    <p class="description">
+                        <span class="des">75 inches</span>
+                        <span class="des">4K</span>
+                        <span class="des">120Hz</span>
+                    </p>
+                    <p class="price">26.599.999 đ</p>
+                </a>
+                <div class="order">
+                    <button class="btn-add">Add cart</button>
+                    <a href="/component/detailtivi/detailtv1.html" class="order-item">Mua hàng</a>
+                </div>
+
+            </div>
+            <div class="list-product-items">
+                <a href="/component/detailtivi/detailtv2.html" class="list-product-items-link">
+                    <img src="/img/tivi/tv2.webp" alt="ip" width="150" height="150">
+                    <h5 class="mt-2 title-product-item">
+                        Smart Tivi Sony 4K 55 inch<br> KD-55X75K VN3
+                    </h5>
+                    <p class="description">
+                        <span class="des">55 inches</span>
+                        <span class="des">4K</span>
+                        <span class="des">50Hz</span>
+                    </p>
+                    <p class="price">11.390.000 đ</p>
+                </a>
+                <div class="order">
+                    <button class="btn-add">Add cart</button>
+                    <a href="/component/detailtivi/detailtv2.html" class="order-item">Mua hàng</a>
+                </div>
+
+            </div>
+            <div class="list-product-items">
+                <a href="/component/detailtivi/detailtv4.html" class="list-product-items-link">
+                    <img src="/img/tivi/tv4.webp" alt="ip" width="150" height="150">
+                    <h5 class="mt-2 title-product-item">
+                        Smart Tivi Sony HD 50 inch<br> KDL 50W660G ZVN3
+                    </h5>
+                    <p class="description">
+                        <span class="des">55 inches</span>
+                        <span class="des">FullHD</span>
+                        <span class="des">100Hz</span>
+                    </p>
+                    <p class="price">14.700.000 đ</p>
+                </a>
+                <div class="order">
+                    <button class="btn-add">Add cart</button>
+                    <a href="/component/detailtivi/detailtv4.html" class="order-item">Mua hàng</a>
+                </div>
+
+            </div>
+            <div class="list-product-items">
+                <a href="/component/detailtivi/detailtv5.html" class="list-product-items-link">
+                    <img src="/img/tivi/tv5.webp" alt="ip" width="150" height="150">
+                    <h5 class="mt-2 title-product-item">
+                        Smart Tivi Samsung Crystal<br> UHD 4K 75 Inch 75BU8000
+                    </h5>
+                    <p class="description">
+                        <span class="des">75 inches</span>
+                        <span class="des">4K</span>
+                        <span class="des">60Hz</span>
+                    </p>
+                    <p class="price">22.490.000 đ</p>
+                </a>
+                <div class="order">
+                    <button class="btn-add">Add cart</button>
+                    <a href="/component/detailtivi/detailtv5.html" class="order-item">Mua hàng</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- đánh giá sp -->
+        <div class="w-75 mx-auto mt-5" style="border: solid 1px #cac9c9;background-color: #f9fafb;border-radius: 10px;">
+            <h5 class="p-3" style="opacity: 0.9;">Phản Hồi</h5>
+            <form action="" class="px-3 text-center ">
+                <input class="input-cmt" type="text" placeholder="viết bình luận ...">
+                <button class="px-3 py-2 mt-2" style="border: none;background-color: #ff0000;color: #FFFFFF;font-weight: 400;border-radius: 10px;font-size: 18px;margin-left: 10px;" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16" style="color: #FFFFFF;">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                  </svg> Gửi</button>
+            </form>
+            <div class="render-comment p-3">
+                
+            </div>
+        </div>
+
+    <!-- this is footer -->
+    <div style="background-color: #f8f8f8;">
+        <div class="container-fluid mt-5 footer">
+            <div class="support mt-3" style="min-width: 200px;;opacity: 0.8;line-height: 0.5;">
+                <h5 style="font-size: 18px;">Tổng đài hỗ trợ miễn phí</h5>
+                <p class="mt-3">Gọi mua hàng <strong>123.456.789</strong></p>
+                <p>Gọi báo lỗi <strong>111.222.333</strong></p>
+                <p>Gọi bảo hành <strong>1800.9999</strong></p>
+                <h5 style="font-size: 16px;">Phương thức thanh toán</h5>
+                <img src="/img/zalopay-logo.png" alt="zalo pay">
+                <img src="/img/vnpay-logo.png" alt="vn pay">
+            </div>
+            <div class="infor mt-3" style="min-width: 200px;opacity: 0.8;line-height: 0.5;">
+                <h5 style="font-size: 18px;">Thông tin và chính sách</h5>
+                <p class="mt-3">Mua hàng và thanh toán Online</p>
+                <p>Mua hàng trả góp Online</p>
+                <p>Trung tâm bảo hành chính hãng</p>
+                <p>Quy định về việc sao lưu dữ liệu</p>
+                <p>Thông tin hoá đơn mua hàng</p>
+            </div>
+            <div class="service mt-3" style="min-width: 200px;opacity: 0.8;line-height: 0.5;">
+                <h5 style="font-size: 18px;">Dịch vụ và thông tin khác</h5>
+                <p class="mt-3">Khách hàng doanh nghiệp</p>
+                <p>Quy chế hoạt động</p>
+                <p>Ưu đãi thanh toán</p>
+                <p>Chính sách bảo hành</p>
+                <p>Tuyển dụng</p>
+            </div>
+            <div class="connect mt-3" style="min-width: 200px;opacity: 0.8;line-height: 0.5;">
+                <h5 style="font-size: 18px;">Kết nối với chúng tôi</h5>
+                <p class="mt-3">Tiktok: <img src="/img/tiktok.png" alt="tiktok" width="30px"></p>
+                <p style="margin-top: -5px;">YouTube: <img src="/img/youTube.png" alt="youTube" width="30px"></p>
+                <p style="margin-top: -5px;">Facebook: <img src="/img/facebook.png" alt="facebook" width="30px"></p>
+                <p style="margin-top: -5px;">Instagram: <img src="/img/instagram.png" alt="instagram" width="30px"></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- zalo support -->
+    <div class="support">
+        <a href="./component/support.html" id="linkzalo" target="_blank" rel="noopener noreferrer">
+            <div class="fcta-zalo-vi-tri-nut">
+                <div id="fcta-zalo-tracking" class="fcta-zalo-nen-nut">
+                    <div id="fcta-zalo-tracking" class="fcta-zalo-ben-trong-nut">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.6" style="margin-top: -15px;">
+                            <path fill="currentColor" class="st0"
+                                d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div id="fcta-zalo-tracking" class="fcta-zalo-text">Chat ngay</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
