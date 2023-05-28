@@ -170,6 +170,7 @@
     padding: 0 5px;
     height: 40px;
     color: #000000;
+    font-weight: 500;
     border: solid 1px #d3d3d3;
     border-radius: 10px;
     background-color: #e7e7e7;
@@ -213,7 +214,7 @@
     font-weight: bold;
 }
 .btn-add{
-    padding: 0 10px 2px;
+    padding: 3px 12px 5px;
     border-radius: 10px;
     border: none;
     font-weight: 500;
@@ -227,10 +228,10 @@
     text-decoration: none;
 }
 .order-item{
-    padding: 1px 10px 3px 10px;
+    padding: 4px 12px 6px 12px;
     border-radius: 10px;
     color: #FFFFFF;
-    background-color:darkgreen;
+    background-color:#1c8c21;
 }
 .order-item:hover{
     color: #FFFFFF;

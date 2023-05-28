@@ -17,6 +17,9 @@
 .text-misspass:link{
     text-decoration: none;
 }
+#btnGoogle{
+    border-radius: 20px;
+}
 
 /* css zalo chat */
 
